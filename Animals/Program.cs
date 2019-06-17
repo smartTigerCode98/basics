@@ -7,6 +7,9 @@ namespace Animals
     {
         public static void Main()
         {
+            
+            ShowInfo showInfo = new ShowInfo();
+            
             var firstCat = new Cat();
 
             firstCat.Name = "Yuri";
@@ -23,19 +26,19 @@ namespace Animals
 
             foreach (var cat in cats)
             {
-                cat.Show();
+                showInfo.Show(cat);
             }
 
             for (int i = 0; i < cats.Count; i++)
             {
-                cats[i].Show();
+                showInfo.Show(cats[i]);
             }
 
             int j = 0;
 
             while (j < cats.Count)
             {
-                cats[j].Show();
+                showInfo.Show(cats[j]);
                 j++;
             }
         }
