@@ -4,41 +4,21 @@ namespace Animals
 {
     public class Cat
     {
-        private string name { get; set; }
+        public string Name { get; set; }
 
-        private string colour { get; set; }
+        public string Colour { get; set; }
         
-        private int age { get; set; }
-
-        public string Name
-        {
-            set => name = value;
-        }
-
-        public string Colour
-        {
-            set => colour = value;
-        }
-
-        public int Age
-        {
-            set => age = value;
-        }
+        public int Age { get; set; }
+        
 
         public Cat(){}
         
         public Cat(string name, string colour, int age)
         {
-            this.name = name;
-            this.colour = colour;
-            this.age = age;
+            Name = name;
+            Colour = colour;
+            Age = age;
         }
-
-        public void Show()
-        {
-            Console.WriteLine($"My name is {name}");
-            Console.WriteLine($"My colour is {colour}");
-            Console.WriteLine($"I'm {age} years old");
-        }
+        
     }
 }
